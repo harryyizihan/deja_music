@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.andriod.deja_vu.activities.MediaPlayerActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_image"
+        app:layout_constraintBottom_toTopOf="@+id/SongName"
+        app:layout_constraintEnd_toStartOf="@+id/PauseButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/PauseButton"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pause_image"
+        app:layout_constraintBottom_toTopOf="@+id/SongName"
+        app:layout_constraintEnd_toStartOf="@+id/ResetButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/PlayButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintBottom_toTopOf="@+id/SongName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/PauseButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/SongName"
+        android:layout_width="368dp"
+        android:layout_height="30dp"
+        android:text="Song Name Goes Here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/album"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="189dp"
+        android:layout_height="194dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/team_12_black" />
+
+    <TextView
+        android:id="@+id/LocationDate"
+        android:layout_width="366dp"
+        android:layout_height="22dp"
+        android:text="Song Date/Location Goes Here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ToggleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationDate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif"
+        android:text="Last Played By: Team 12"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LocationDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist" />
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="368dp"
+        android:layout_height="25dp"
+        android:text="Album Name Goes Here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/artist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SongName" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="368dp"
+        android:layout_height="25dp"
+        android:text="Artist Name Goes Here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album" />
+
+</android.support.constraint.ConstraintLayout>

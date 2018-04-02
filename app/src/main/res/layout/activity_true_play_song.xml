@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context="com.andriod.deja_vu.activities.PlaySongListActivity">
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="@android:color/background_dark"></ListView>
+
+    <Button
+        android:id="@+id/button_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_dark"
+        android:text="Title"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_dark"
+        android:text="artist"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_dark"
+        android:text="album"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_dark"
+        android:text="favorite"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</LinearLayout>

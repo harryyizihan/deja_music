@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">iFlashback</string>
+    <string name="title_activity_play_song">Play Songs</string>
+    <string name="clientID">315803550911-aklm0nu84r62frv37nm8s9ftin2389c7.apps.googleusercontent.com</string>
+    <string name="clientSecret">D9POY9VS2IdoAyovZwm08ggi</string>
+</resources>
