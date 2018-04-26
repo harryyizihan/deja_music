@@ -1,4 +1,4 @@
-# Deja vu
+# Deja Music
 
 An Android media player app for effortlessly viewing music tracks of the surrounding users played recently. Users can download tracks easily and check the listening history of certain track
 
